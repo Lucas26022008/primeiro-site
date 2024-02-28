@@ -29,12 +29,10 @@
     <h2>Bem-vindo ao meu site</h2>
     <h2>Professora Titia Vla</h2>
 
-    <!-- Add the image container -->
     <div id="image-container">
         <img id="current-image" src="a.png" width="800" height="500" alt="Escrita de Hello Howrd">
     </div>
 
-    <!-- Add the navigation arrows -->
     <button onclick="nextImage()" id="next-arrow">&gt;</button>
 
     <script>
@@ -50,7 +48,6 @@
             document.getElementById('current-image').src = images[currentImageIndex];
         }
 
-        // Display the first image on page load
         window.onload = function() {
             nextImage();
         };
