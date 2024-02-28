@@ -19,6 +19,37 @@
         p {
             font-size: 14px;
         }
+
+        /* Style for the image container */
+        #image-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Style for the image */
+        #current-image {
+            width: 80%;
+            height: auto;
+        }
+
+        /* Style for the buttons */
+        .arrow-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: transparent;
+            border: none;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        #previous-arrow {
+            left: 0;
+        }
+
+        #next-arrow {
+            right: 0;
+        }
     </style>
 </head>
 <body>
@@ -30,10 +61,10 @@
     <h2>Professora Titia Vla</h2>
 
     <div id="image-container">
-        <img id="current-image" src="a.png" width="800" height="500" alt="Escrita de Hello Howrd">
+        <img id="current-image" src="a.png" alt="Escrita de Hello Howrd">
+        <button id="previous-arrow" class="arrow-button">&lt;</button>
+        <button onclick="nextImage()" id="next-arrow" class="arrow-button">&gt;</button>
     </div>
-
-    <button onclick="nextImage()" id="next-arrow">&gt;</button>
 
     <script>
         const images = [
