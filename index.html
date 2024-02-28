@@ -62,6 +62,19 @@
         #next-arrow {
             right: 0;
         }
+
+        /* Added CSS for maintaining image aspect ratio */
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Added CSS to center the image */
+        .centered-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 </head>
 <body>
@@ -76,7 +89,7 @@
         <h2>Professora Titia Vla</h2>
 
         <div id="image-container">
-            <img id="current-image" src="a.png" alt="Escrita de Hello Howrd">
+            <img id="current-image" class="centered-image" src="a.png" alt="Escrita de Hello Howrd">
             <button id="previous-arrow" class="arrow-button">&lt;</button>
             <button onclick="nextImage()" id="next-arrow" class="arrow-button">&gt;</button>
         </div>
